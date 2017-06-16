@@ -20,7 +20,7 @@ namespace VL
 
         private void Form1_Load(object sender, EventArgs e)
         { Draw DR = new Draw();
-            DR.Carve();
+            
         }
 
         
