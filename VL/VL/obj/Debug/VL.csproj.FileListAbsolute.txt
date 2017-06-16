@@ -1,0 +1,4 @@
+C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.Form1.resources
+C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.Properties.Resources.resources
+C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.csproj.GenerateResource.Cache
