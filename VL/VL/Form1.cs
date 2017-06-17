@@ -32,11 +32,15 @@ namespace VL
              DR.DR = pictureBox1.CreateGraphics();
              DR.F = float.Parse(F.Text);
              DR.MooD = float.Parse(MooD.Text);
+             DR.Do = float.Parse(Do.Text);
+             DR.Di = float.Parse(Di.Text);
+             DR.Ho = float.Parse(Ho.Text);
+             DR.Hi = float.Parse(Hi.Text);
              DR.HighT = pictureBox1.Height;
              DR.WighT = pictureBox1.Width;
              DR.CoordinateS();
              DR.ConveX();
-             RflectioN();
+             DR.RflectioN();
              DR.MieN_LinE(); 
 
         }
