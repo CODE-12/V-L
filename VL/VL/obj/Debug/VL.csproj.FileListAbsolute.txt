@@ -2,3 +2,10 @@ C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.csprojResolveAssemblyReference.cac
 C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.Form1.resources
 C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.Properties.Resources.resources
 C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\la b\VL\VL\bin\Debug\VL.exe.config
+C:\Users\user\Desktop\la b\VL\VL\bin\Debug\VL.exe
+C:\Users\user\Desktop\la b\VL\VL\bin\Debug\VL.pdb
+C:\Users\user\Desktop\la b\VL\VL\bin\Debug\MetroFramework.dll
+C:\Users\user\Desktop\la b\VL\VL\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.exe
+C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.pdb

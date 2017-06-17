@@ -30,20 +30,21 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Do = new System.Windows.Forms.TextBox();
-            this.Ho = new System.Windows.Forms.TextBox();
-            this.MooD = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.F = new System.Windows.Forms.TextBox();
-            this.Di = new System.Windows.Forms.TextBox();
-            this.Hi = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.F = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Di = new System.Windows.Forms.TextBox();
+            this.MooD = new System.Windows.Forms.TextBox();
+            this.Hi = new System.Windows.Forms.TextBox();
+            this.Ho = new System.Windows.Forms.TextBox();
+            this.Do = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -69,81 +70,9 @@
             this.panel1.Size = new System.Drawing.Size(208, 640);
             this.panel1.TabIndex = 1;
             // 
-            // Do
-            // 
-            this.Do.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.Do.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Do.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.Do.Location = new System.Drawing.Point(102, 21);
-            this.Do.Name = "Do";
-            this.Do.Size = new System.Drawing.Size(47, 22);
-            this.Do.TabIndex = 7;
-            // 
-            // Ho
-            // 
-            this.Ho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.Ho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Ho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.Ho.Location = new System.Drawing.Point(102, 49);
-            this.Ho.Name = "Ho";
-            this.Ho.Size = new System.Drawing.Size(47, 22);
-            this.Ho.TabIndex = 6;
-            // 
-            // MooD
-            // 
-            this.MooD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.MooD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MooD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.MooD.Location = new System.Drawing.Point(102, 77);
-            this.MooD.Name = "MooD";
-            this.MooD.Size = new System.Drawing.Size(47, 22);
-            this.MooD.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button1.Location = new System.Drawing.Point(3, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 36);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "ارسم ";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // F
-            // 
-            this.F.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.F.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.F.Location = new System.Drawing.Point(49, 77);
-            this.F.Name = "F";
-            this.F.Size = new System.Drawing.Size(47, 22);
-            this.F.TabIndex = 0;
-            // 
-            // Di
-            // 
-            this.Di.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.Di.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Di.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.Di.Location = new System.Drawing.Point(49, 21);
-            this.Di.Name = "Di";
-            this.Di.Size = new System.Drawing.Size(47, 22);
-            this.Di.TabIndex = 9;
-            // 
-            // Hi
-            // 
-            this.Hi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
-            this.Hi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Hi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.Hi.Location = new System.Drawing.Point(49, 49);
-            this.Hi.Name = "Hi";
-            this.Hi.Size = new System.Drawing.Size(47, 22);
-            this.Hi.TabIndex = 8;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -159,50 +88,31 @@
             this.groupBox1.Controls.Add(this.Do);
             this.groupBox1.Location = new System.Drawing.Point(3, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(202, 144);
+            this.groupBox1.Size = new System.Drawing.Size(202, 168);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "الرسم ";
             // 
-            // label1
+            // checkBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.label1.Location = new System.Drawing.Point(22, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Di";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(49, 105);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(98, 21);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.label2.Location = new System.Drawing.Point(22, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 17);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Hi";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.label3.Location = new System.Drawing.Point(22, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 17);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "F";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.label4.Location = new System.Drawing.Point(155, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 17);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Do";
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label6.Location = new System.Drawing.Point(149, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Square";
             // 
             // label5
             // 
@@ -214,15 +124,119 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Ho";
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.label6.Location = new System.Drawing.Point(149, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 17);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Square";
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label4.Location = new System.Drawing.Point(155, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 17);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Do";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label3.Location = new System.Drawing.Point(22, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 17);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "F";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label2.Location = new System.Drawing.Point(22, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 17);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Hi";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label1.Location = new System.Drawing.Point(22, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 17);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Di";
+            // 
+            // F
+            // 
+            this.F.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.F.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.F.Location = new System.Drawing.Point(49, 77);
+            this.F.Name = "F";
+            this.F.Size = new System.Drawing.Size(47, 22);
+            this.F.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button1.Location = new System.Drawing.Point(3, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 36);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "ارسم ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Di
+            // 
+            this.Di.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.Di.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Di.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.Di.Location = new System.Drawing.Point(49, 21);
+            this.Di.Name = "Di";
+            this.Di.Size = new System.Drawing.Size(47, 22);
+            this.Di.TabIndex = 9;
+            // 
+            // MooD
+            // 
+            this.MooD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.MooD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MooD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.MooD.Location = new System.Drawing.Point(102, 77);
+            this.MooD.Name = "MooD";
+            this.MooD.Size = new System.Drawing.Size(47, 22);
+            this.MooD.TabIndex = 5;
+            // 
+            // Hi
+            // 
+            this.Hi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.Hi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Hi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.Hi.Location = new System.Drawing.Point(49, 49);
+            this.Hi.Name = "Hi";
+            this.Hi.Size = new System.Drawing.Size(47, 22);
+            this.Hi.TabIndex = 8;
+            // 
+            // Ho
+            // 
+            this.Ho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.Ho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Ho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.Ho.Location = new System.Drawing.Point(102, 49);
+            this.Ho.Name = "Ho";
+            this.Ho.Size = new System.Drawing.Size(47, 22);
+            this.Ho.TabIndex = 6;
+            // 
+            // Do
+            // 
+            this.Do.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(215)))), ((int)(((byte)(223)))));
+            this.Do.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Do.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.Do.Location = new System.Drawing.Point(102, 21);
+            this.Do.Name = "Do";
+            this.Do.Size = new System.Drawing.Size(47, 22);
+            this.Do.TabIndex = 7;
             // 
             // Form1
             // 
@@ -260,6 +274,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

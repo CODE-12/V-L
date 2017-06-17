@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace VL
 {
@@ -19,7 +20,7 @@ namespace VL
         public float MooD { get; set; }
         public float WighT { get; set; }
         public float HighT { get; set; }
-        Graphics DR;
+       public Graphics DR;
        
 
         public void ConcavE_MirrorS()
@@ -59,7 +60,7 @@ namespace VL
             string cc = "C";
             Font co = new Font("Arial", 12);
             SolidBrush cb = new SolidBrush(Color.Black);
-            PointF cc1 = new PointF(710 - F * (MooD * 2), F * 2 * (2 * MooD) + 120);
+            PointF cc1 = new PointF(710 - F * (MooD * 2), F * (MooD * 2) + 120);
             DR.DrawString(cc, co, cb, cc1);
 
 
@@ -71,9 +72,9 @@ namespace VL
         {
             //PointS
             //1
-            PointF P1 = new PointF(700 - (F * 4), 120); PointF P2 = new PointF(680, 120 + (F * (MooD * 2))); PointF P3 = new PointF(700 - (F * 4), ((4 * MooD) * F) + 120);
+            PointF P1 = new PointF(730 - (F * 4), 120); PointF P2 = new PointF(700, 120 + (F * (MooD * 2))); PointF P3 = new PointF(730 - (F * 4), ((4 * MooD) * F) + 120);
             //2
-            PointF P4 = new PointF(730 - (F * 2), 120); PointF P5 = new PointF(710, 120 + (F * (MooD * 2))); PointF P6 = new PointF(730 - (F * 2), ((4 * MooD) * F) + 120);
+            PointF P4 = new PointF(770 - (F * 2), 120); PointF P5 = new PointF(730, 120 + (F * (MooD * 2))); PointF P6 = new PointF(770 - (F * 2), ((4 * MooD) * F) + 120);
 
             //CurvE1
             PointF[] point1 = { P1, P2, P3 };
@@ -103,7 +104,7 @@ namespace VL
             string cc = "C";
             Font co = new Font("Arial", 12);
             SolidBrush cb = new SolidBrush(Color.Black);
-            PointF cc1 = new PointF(710 - F * (MooD * 2), F * 2 * (2 * MooD) + 120);
+            PointF cc1 = new PointF(710 - F * (MooD * 2), F * (MooD * 2) + 120);
             DR.DrawString(cc, co, cb, cc1);
 
 
@@ -112,9 +113,9 @@ namespace VL
         {
             //PointS
             //1
-            PointF P1 = new PointF(700 - (F * 4), 120); PointF P2 = new PointF(680, 120 + (F * (MooD * 2))); PointF P3 = new PointF(700 - (F * 4), ((4 * MooD) * F) + 120);
+            PointF P1 = new PointF(705, 120); PointF P2 = new PointF(685, 120 + (F * (MooD * 2))); PointF P3 = new PointF(705, ((4 * MooD) * F) + 120);
             //2
-            PointF P4 = new PointF(710 - (F * 2), 120); PointF P5 = new PointF(730, 120 + (F * (MooD * 2))); PointF P6 = new PointF(710 - (F * 2), ((4 * MooD) * F) + 120);
+            PointF P4 = new PointF(725, 120); PointF P5 = new PointF(745, 120 + (F * (MooD * 2))); PointF P6 = new PointF(725, ((4 * MooD) * F) + 120);
 
             //CurvE1
             PointF[] point1 = { P1, P2, P3 };
@@ -144,7 +145,7 @@ namespace VL
             string cc = "C";
             Font co = new Font("Arial", 12);
             SolidBrush cb = new SolidBrush(Color.Black);
-            PointF cc1 = new PointF(710 - F * (MooD * 2), F * 2 * (2 * MooD) + 120);
+            PointF cc1 = new PointF(710 - F * (MooD * 2),F * (MooD * 2) + 120);
             DR.DrawString(cc, co, cb, cc1);
 
 
@@ -154,9 +155,9 @@ namespace VL
         {
             //PointS
             //1
-            PointF P1 = new PointF(680 - (F * 4), 120); PointF P2 = new PointF(700, 120 + (F * (MooD * 2))); PointF P3 = new PointF(680 - (F * 4), ((4 * MooD) * F) + 120);
+            PointF P1 = new PointF(675 , 120); PointF P2 = new PointF(705, 120 + (F * (MooD * 2))); PointF P3 = new PointF(675, ((4 * MooD) * F) + 120);
             //2
-            PointF P4 = new PointF(730 - (F * 2), 120); PointF P5 = new PointF(710, 120 + (F * (MooD * 2))); PointF P6 = new PointF(730 - (F * 2), ((4 * MooD) * F) + 120);
+            PointF P4 = new PointF(745 , 120); PointF P5 = new PointF(725, 120 + (F * (MooD * 2))); PointF P6 = new PointF(745, ((4 * MooD) * F) + 120);
 
             //CurvE1
             PointF[] point1 = { P1, P2, P3 };
@@ -186,7 +187,7 @@ namespace VL
             string cc = "C";
             Font co = new Font("Arial", 12);
             SolidBrush cb = new SolidBrush(Color.Black);
-            PointF cc1 = new PointF(710 - F * (MooD * 2), F * 2 * (2 * MooD) + 120);
+            PointF cc1 = new PointF(710 - F * (MooD * 2), F *  (2 * MooD) + 120);
             DR.DrawString(cc, co, cb, cc1);
 
         }
