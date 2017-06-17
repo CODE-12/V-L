@@ -45,20 +45,7 @@ namespace VL
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)
         {
         }
-        public void RflectioN()
-        {
-            RE = pictureBox1.CreateGraphics();
-            float DI = float.Parse(Di.Text); float DO = float.Parse(Do.Text);
-            float HI = float.Parse(Hi.Text); float HO = float.Parse(Ho.Text);
-            float Mood = float.Parse(MooD.Text); float f = float.Parse(F.Text);
-            // PointS
-            //BodY
-            PointF pBODY1 = new PointF(715 - (DO * Mood), f * (Mood) * 2 + 120); PointF pBODY2 = new PointF(715 - (DO * Mood), f * (Mood) * 2 + 120-DI * (Mood) );
-            RE.DrawLine(Pens.Black,pBODY1,pBODY2);
-            //Imge
-            PointF pIMGE1 = new PointF(715-(HO * Mood), f * (Mood) * 2 + 120); PointF pIMGE2 = new PointF(715 - (HO * Mood), f * (Mood) * 2 + 120 + HI * (Mood));
-            RE.DrawLine(Pens.Black, pIMGE1, pIMGE2);
-        }
+       
         
     }
 }

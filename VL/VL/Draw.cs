@@ -233,5 +233,15 @@ namespace VL
 
 
         }
+        public void RflectioN()
+        {
+            // PointS
+            //BodY
+            PointF pBODY1 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120); PointF pBODY2 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120 - Di * (MooD));
+            DR.DrawLine(Pens.Black, pBODY1, pBODY2);
+            //Imge
+            PointF pIMGE1 = new PointF(715 - (Ho * MooD), F * (MooD) * 2 + 120); PointF pIMGE2 = new PointF(715 - (Ho * MooD), F * (MooD) * 2 + 120 + Hi * (MooD));
+            DR.DrawLine(Pens.Black, pIMGE1, pIMGE2);
+        }
     }
 }
