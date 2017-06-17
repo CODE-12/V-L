@@ -20,7 +20,7 @@ namespace VL
         public float MooD { get; set; }
         public float WighT { get; set; }
         public float HighT { get; set; }
-       public Graphics DR;
+        public Graphics DR;
        
 
         public void ConcavE_MirrorS()
@@ -210,7 +210,7 @@ namespace VL
             float y1 = 0;
             float x2 = x1;
             float y2 = HighT;
-            for (x1 = 0; x1 < WighT; x1 += MooD, x2 += MooD)
+            for (x1 = 0; x1 < WighT; x1 += (MooD-0.2f), x2 += (MooD-0.2f))
             {
 
                 
@@ -221,7 +221,7 @@ namespace VL
             float y3 = 0;
             float x4 = WighT;
             float y4 = y3;
-            for (y3 = 0; y3 < HighT; y3 += MooD, y4 += MooD)
+            for (y3 = 0; y3 < HighT; y3 += (MooD ), y4 += (MooD ))
             {
                
                 DR.DrawLine(Pens.DarkGray, x3, y3, x4, y4);
