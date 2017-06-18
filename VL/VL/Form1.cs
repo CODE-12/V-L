@@ -39,9 +39,9 @@ namespace VL
              DR.HighT = pictureBox1.Height;
              DR.WighT = pictureBox1.Width;
              DR.CoordinateS();
-             DR.ConcavE_MirrorS();
+             DR.ConveX_MirrorS();
              DR.RflectioN_U();
-             DR.ConcavE_MiroorS_R();
+             DR.ConveX_MirrorS_R();
              DR.MieN_LinE();
         }
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)

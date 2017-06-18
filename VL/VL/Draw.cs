@@ -73,8 +73,9 @@ namespace VL
             PointF pBM1 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120 - Di * (MooD)); PointF pBM2 = new PointF(715, F * (MooD) * 2 + 120 - Di * (MooD));
             PointF pMF1 = new PointF(715 - F * MooD, F * 2 * MooD + 120);
             PointF pFI1 = new PointF(715 - (Ho * MooD), F * (MooD) * 2 + 120 + Hi * (MooD));
-            PointF pBM3 = new PointF(715, F * (MooD) * 2 + 120 + Hi * (MooD));
+            PointF pBM3 = new PointF(715, F * (MooD) * 2 + 120 + Hi * (MooD)); PointF pBM4 = new PointF(715, F * 2 * MooD + 100);
             PointF pMI1 = new PointF(0, F * (MooD) * 2 + 120 + Hi * (MooD)); PointF pMI2 = new PointF(715 + (Ho * MooD), F * (MooD) * 2 + 120 - Hi * (MooD));
+            Point pZ1 = new Point(0, 0); PointF pZ2 = new PointF(0, F * 2 * MooD + 100);
             if (Do > F)
             {
                 ///..M
@@ -102,23 +103,17 @@ namespace VL
             {
                 // from bady to mirror
                 DR.DrawLine(Pens.Black, pBM1, pBM2);
-                //from mirror to imge // using pBM2
+                // from mirror to imge // using pBM2
                 DR.DrawLine(Pens.Black,pMI2, pBM2);
-                // from 0 to mirror// using pBM2
-                Point pZ1 = new Point(0,0);
-                DR.DrawLine(Pens.Red, pZ1, pBM2);
-
+                // from 0 to mirror 
+                // using pBM2
+                DR.DrawLine(Pens.Black, pZ1, pBM2);
                 // from body to mirror // using pBM1
-                PointF pBM4 = new PointF(715, F * 2 * MooD + 100);
-                DR.DrawLine(Pens.Red, pBM1, pBM4);
+                DR.DrawLine(Pens.Black, pBM1, pBM4);
                 // from mirror to imge // using pMI2
                 DR.DrawLine(Pens.Black, pMI2, pBM4);
                 // from 0 to mirror // using pBM4
-                PointF pZ2 = new PointF(0, F * 2 * MooD + 100);
-                DR.DrawLine(Pens.Red, pBM4, pZ2);
-
-
-
+                DR.DrawLine(Pens.Black, pBM4, pZ2);
             }
         }
         public void ConveX_MirrorS()
@@ -128,38 +123,49 @@ namespace VL
             PointF P1 = new PointF(730 - (F * 4), 120); PointF P2 = new PointF(700, 120 + (F * (MooD * 2))); PointF P3 = new PointF(730 - (F * 4), ((4 * MooD) * F) + 120);
             //2
             PointF P4 = new PointF(770 - (F * 2), 120); PointF P5 = new PointF(730, 120 + (F * (MooD * 2))); PointF P6 = new PointF(770 - (F * 2), ((4 * MooD) * F) + 120);
-
             //CurvE1
             PointF[] point1 = { P1, P2, P3 };
             DR.DrawCurve(Pens.Gray, point1);
-
             //CurvE2
             PointF[] point2 = { P4, P5, P6 };
             DR.DrawCurve(Pens.Gray, point2);
-
             //LineS
             //1
             DR.DrawLine(Pens.Gray, P1, P4);
             //2
             DR.DrawLine(Pens.Gray, P3, P6);
-
-
             //F
-
             string ff = "F";
             Font fo = new Font("Arial", 12);
             SolidBrush fb = new SolidBrush(Color.Black);
             PointF f1 = new PointF(710 - F * MooD, F * 2 * MooD + 120);
             DR.DrawString(ff, fo, fb, f1);
-
             //C
-
             string cc = "C";
             Font co = new Font("Arial", 12);
             SolidBrush cb = new SolidBrush(Color.Black);
             PointF cc1 = new PointF(710 - F * (MooD * 2), F * (MooD * 2) + 120);
             DR.DrawString(cc, co, cb, cc1);
-
+        }
+        public void ConveX_MirrorS_R()
+        {
+            PointF pBM1 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120 - Di * (MooD)); PointF pBM2 = new PointF(715, F * (MooD) * 2 + 120 - Di * (MooD));
+            Point pZ1 = new Point(0, 0); PointF pZ2 = new PointF(0, F * 2 * MooD + 100);
+            PointF pMI2 = new PointF(715 + (Ho * MooD), F * (MooD) * 2 + 120 - Hi * (MooD));
+            PointF pBM4 = new PointF(715, F * 2 * MooD + 100);
+            // from bady to mirror
+            DR.DrawLine(Pens.Black, pBM1, pBM2);
+            // from mirror to imge // using pBM2
+            DR.DrawLine(Pens.Black, pMI2, pBM2);
+            // from 0 to mirror 
+            // using pBM2
+            DR.DrawLine(Pens.Black, pZ1, pBM2);
+            // from body to mirror // using pBM1
+            DR.DrawLine(Pens.Black, pBM1, pBM4);
+            // from mirror to imge // using pMI2
+            DR.DrawLine(Pens.Black, pMI2, pBM4);
+            // from 0 to mirror // using pBM4
+            DR.DrawLine(Pens.Black, pBM4, pZ2);
 
         }
         public void ConcavE()
