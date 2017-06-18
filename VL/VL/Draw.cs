@@ -21,7 +21,6 @@ namespace VL
         public float WighT { get; set; }
         public float HighT { get; set; }
         public Graphics DR;
-       
 
         public void ConcavE_MirrorS()
         {
@@ -67,6 +66,60 @@ namespace VL
 
 
 
+        }
+        public void ConcavE_MiroorS_R()
+        {
+            //PointS
+            PointF pBM1 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120 - Di * (MooD)); PointF pBM2 = new PointF(715, F * (MooD) * 2 + 120 - Di * (MooD));
+            PointF pMF1 = new PointF(715 - F * MooD, F * 2 * MooD + 120);
+            PointF pFI1 = new PointF(715 - (Ho * MooD), F * (MooD) * 2 + 120 + Hi * (MooD));
+            PointF pBM3 = new PointF(715, F * (MooD) * 2 + 120 + Hi * (MooD));
+            PointF pMI1 = new PointF(0, F * (MooD) * 2 + 120 + Hi * (MooD)); PointF pMI2 = new PointF(715 + (Ho * MooD), F * (MooD) * 2 + 120 - Hi * (MooD));
+            if (Do > F)
+            {
+                ///..M
+                //first line[
+                // from bady to mirror
+                DR.DrawLine(Pens.Black, pBM1, pBM2);
+                // from mirror to F//using pBM2
+                DR.DrawLine(Pens.Black, pMF1, pBM2);
+                // from F to imge // using pMF1
+                DR.DrawLine(Pens.Black, pFI1, pMF1);
+                // from imge to endless// using pFI1 
+                /* float p1 = 715 - (Ho * MooD); float p2 = F * (MooD) * 2 + 120 + Hi * (MooD);
+                 float p3 = WighT; float p4 = (p3 - p1) * p2;
+                 PointF pIE1 = new PointF((-1*p3),p4);
+                 DR.DrawLine(Pens.Blue,pIE1,pFI1);
+                 //]*/
+                // [
+                // from bady to mirror // using pBM1
+                DR.DrawLine(Pens.Black, pBM3, pBM1);
+                // form mirror to imge // using pBM3
+                DR.DrawLine(Pens.Black, pBM3, pMI1);
+                // ]
+            }
+            else
+            {
+                // from bady to mirror
+                DR.DrawLine(Pens.Black, pBM1, pBM2);
+                //from mirror to imge // using pBM2
+                DR.DrawLine(Pens.Black,pMI2, pBM2);
+                // from 0 to mirror// using pBM2
+                Point pZ1 = new Point(0,0);
+                DR.DrawLine(Pens.Red, pZ1, pBM2);
+
+                // from body to mirror // using pBM1
+                PointF pBM4 = new PointF(715, F * 2 * MooD + 100);
+                DR.DrawLine(Pens.Red, pBM1, pBM4);
+                // from mirror to imge // using pMI2
+                DR.DrawLine(Pens.Black, pMI2, pBM4);
+                // from 0 to mirror // using pBM4
+                PointF pZ2 = new PointF(0, F * 2 * MooD + 100);
+                DR.DrawLine(Pens.Red, pBM4, pZ2);
+
+
+
+            }
         }
         public void ConveX_MirrorS()
         {
@@ -233,7 +286,7 @@ namespace VL
 
 
         }
-        public void RflectioN()
+        public void RflectioN_D()
         {
             // PointS
             //BodY
@@ -241,6 +294,16 @@ namespace VL
             DR.DrawLine(Pens.Black, pBODY1, pBODY2);
             //Imge
             PointF pIMGE1 = new PointF(715 - (Ho * MooD), F * (MooD) * 2 + 120); PointF pIMGE2 = new PointF(715 - (Ho * MooD), F * (MooD) * 2 + 120 + Hi * (MooD));
+            DR.DrawLine(Pens.Black, pIMGE1, pIMGE2);
+        }
+        public void RflectioN_U()
+        {
+            // PointS
+            //BodY
+            PointF pBODY1 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120); PointF pBODY2 = new PointF(715 - (Do * MooD), F * (MooD) * 2 + 120 - Di * (MooD));
+            DR.DrawLine(Pens.Black, pBODY1, pBODY2);
+            //Imge
+            PointF pIMGE1 = new PointF(715 + (Ho * MooD), F * (MooD) * 2 + 120); PointF pIMGE2 = new PointF(715 + (Ho * MooD), F * (MooD) * 2 + 120 - Hi * (MooD));
             DR.DrawLine(Pens.Black, pIMGE1, pIMGE2);
         }
     }
