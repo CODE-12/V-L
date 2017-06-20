@@ -14,8 +14,6 @@ namespace VL
     public partial class Form1 : MetroForm
     {
         Draw DR = new Draw();
-        Graphics RE;
-
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +27,8 @@ namespace VL
         private void button1_Click(object sender, EventArgs e)
         {
              pictureBox1.Refresh();
+             DR.A = pictureBox1.Width * 0.1f;
+             DR.B = 2;
              DR.DR = pictureBox1.CreateGraphics();
              DR.F = float.Parse(F.Text);
              DR.MooD = float.Parse(MooD.Text);
@@ -39,10 +39,7 @@ namespace VL
              DR.HighT = pictureBox1.Height;
              DR.WighT = pictureBox1.Width;
              DR.CoordinateS();
-             DR.ConveX_MirrorS();
-             DR.RflectioN_U();
-             DR.ConveX_MirrorS_R();
-             DR.MieN_LinE();
+             DR.ConveX();
         }
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)
         {
