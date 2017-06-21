@@ -23,12 +23,13 @@ namespace VL
         { 
             
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
-             pictureBox1.Refresh();
-             DR.A = pictureBox1.Width * 0.1f;
-             DR.B = 2;
+            pictureBox1.Refresh();
+            DR.A = pictureBox1.Width * 0.1f;
+            DR.B = 2;
+            DR.yColor = Color.FromArgb(254, 226, 13);
              DR.DR = pictureBox1.CreateGraphics();
              DR.F = float.Parse(F.Text);
              DR.MooD = float.Parse(MooD.Text);

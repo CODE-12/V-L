@@ -23,6 +23,7 @@ namespace VL
         public float WighT { get; set; }
         public float HighT { get; set; }
         public Graphics DR { get; set; }
+        public Color yColor { get; set; }
 
         public void ConcavE_MirrorS()
         {
@@ -89,12 +90,12 @@ namespace VL
                 // ]
                 RflectioN_D();
             }
-            else
+            else if (Do < F)
             {
                 // from bady to mirror
                 DR.DrawLine(Pens.Black, pBM1, pBM2);
                 // from mirror to imge // using pBM2
-                DR.DrawLine(Pens.Black,pMI2, pBM2);
+                DR.DrawLine(Pens.Black, pMI2, pBM2);
                 // from 0 to mirror 
                 // using pBM2
                 DR.DrawLine(Pens.Black, pZ1, pBM2);
@@ -106,6 +107,7 @@ namespace VL
                 DR.DrawLine(Pens.Black, pBM4, pZ2);
                 RflectioN_U();
             }
+            else { return; }
         }
         public void ConveX_MirrorS()
         {
@@ -216,7 +218,7 @@ namespace VL
              
                 RflectioN_D();
             }
-            else if (Do<F)
+            else if (Do < F)
             {
                 // from body to glass 
                 DR.DrawLine(Pens.Red, pBM1, pBM2);
@@ -230,9 +232,7 @@ namespace VL
                 DR.DrawLine(Pens.Red, pBM2, pIMGE2);
                 //from glass to imge // using pMI3
                 DR.DrawLine(Pens.Red, pMI3, pIMGE2);
-
                 RflectioN_U();
-
             }
         }
         public void ConveX()
@@ -265,12 +265,28 @@ namespace VL
             SolidBrush cb = new SolidBrush(Color.Black);
             PointF cc1 = new PointF((500 +A) - F * (MooD * 2), F *  (2 * MooD) + 120); PointF cc2 = new PointF((500 + A) + F * (MooD * 2), F * (2 * MooD) + 120);
             DR.DrawString(cc, co, cb, cc2); DR.DrawString(cc, co, cb, cc1);
-            MieN_LinE();
-
+            MieN_LinE();ConveX_R(); RflectioN_U();
         }
         public void ConveX_R()
         {
+            Pen ycol = new Pen(yColor);
+            //PointS
+            PointF pBM1 = new PointF((505 + A) - (Do * MooD), F * (MooD) * 2 + 120 - Di * (MooD)); PointF pBM2 = new PointF(505+A, F * (MooD) * 2 + 120 - Di * (MooD)); PointF pBM3 = new PointF((505 + A), F * 2 * MooD + 100);
+            PointF pME1 = new PointF((500 + A) + F * MooD,0);PointF pME2 = new PointF(WighT, F * 2 * MooD + 100);
+            PointF pIM1 = new PointF((505 + A) - (Ho * MooD), F * (MooD) * 2 + 120 - Hi * (MooD)); 
 
+            // from body to glass // using pBM1 ,pBM2
+            DR.DrawLine(ycol, pBM1, pBM2);
+            // from body to glass // using pBM1 , pBM3
+            DR.DrawLine(ycol, pBM1, pBM3);
+            // from glass to end //using pBM2 , pMI1
+            DR.DrawLine(Pens.Red, pBM2, pME1);
+            // from glass to end //using pBM3 , pMI1
+            DR.DrawLine(Pens.Red, pBM3, pME2);
+            // from glass to imge //using pBM2 , pIM1
+            DR.DrawLine(Pens.Red, pBM2, pIM1);
+            // from glass to imge //using pBM3 , pIM1
+            DR.DrawLine(Pens.Red, pBM3, pIM1);
         }
         public void MieN_LinE()
         {
