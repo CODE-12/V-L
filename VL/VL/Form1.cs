@@ -13,7 +13,7 @@ namespace VL
 {
     public partial class Form1 : MetroForm
     {
-        Draw DR = new Draw();
+        Draw DR = new Draw(); Equations EQ = new Equations();
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +23,6 @@ namespace VL
         { 
             
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.Refresh();
@@ -43,25 +42,65 @@ namespace VL
              DR.CoordinateS();
              DR.ConveX();
         }
-        private void checkBox1_CheckStateChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Equations EQ = new Equations();
-            if (Di_M.Text == "?")
+            try
             {
-                EQ.Do = float.Parse(Do_M.Text); 
-                EQ.Ho = float.Parse(Ho_M.Text); EQ.Hi = float.Parse(Hi_M.Text);
-                EQ.Missing_Di_M();
-                
+                if (Di_M.Text == "?")
+                {
+                    EQ.Do = float.Parse(Do_M.Text);
+                    EQ.Ho = float.Parse(Ho_M.Text); EQ.Hi = float.Parse(Hi_M.Text);
+                    EQ.Missing_Di_M();
+                    T_M.Text = EQ.Tips; R_M.Text = EQ.Res_S;
+                }
+                else if (Do_M.Text == "?")
+                {
+                    EQ.Di = float.Parse(Di_M.Text);
+                    EQ.Ho = float.Parse(Ho_M.Text); EQ.Hi = float.Parse(Hi_M.Text);
+                    EQ.Missing_Do_M();
+                    T_M.Text = EQ.Tips; R_M.Text = EQ.Res_S;
+                }
+                else if (Hi_M.Text == "?")
+                {
+                    EQ.Do = float.Parse(Do_M.Text);
+                    EQ.Ho = float.Parse(Ho_M.Text); EQ.Di = float.Parse(Di_M.Text);
+                    EQ.Missing_Hi_M();
+                    T_M.Text = EQ.Tips; R_M.Text = EQ.Res_S;
+                }
+                else if (Ho_M.Text == "?")
+                {
+                    EQ.Do = float.Parse(Do_M.Text);
+                    EQ.Di = float.Parse(Di_M.Text); EQ.Hi = float.Parse(Hi_M.Text);
+                    EQ.Missing_Ho_M();
+                    T_M.Text = EQ.Tips; R_M.Text = EQ.Res_S;
+                }
             }
+            catch { return; }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (F_F.Text=="?")
+                {
+                    EQ.Di = float.Parse(Di_F.Text); EQ.Do = float.Parse(Do_F.Text);
+                    EQ.Missing_F_F();
+                    R_F.Text = EQ.Res_S;T_F.Text = EQ.Tips;
+                }
+               else if (Di_F.Text == "?")
+               {
+                    EQ.F = float.Parse(F_F.Text); EQ.Do = float.Parse(Do_F.Text);
+                    EQ.Missing_Di_F();
+                    R_F.Text = EQ.Res_S; T_F.Text = EQ.Tips;
+               }
+               else if (Do_F.Text == "?")
+               {
+                    EQ.Di = float.Parse(Di_F.Text); EQ.F = float.Parse(F_F.Text);
+                    EQ.Missing_Do_F();
+                    R_F.Text = EQ.Res_S; T_F.Text = EQ.Tips;
+               }
+            }
+            catch{ return; }
         }
     }
 }
