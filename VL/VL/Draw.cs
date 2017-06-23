@@ -24,6 +24,8 @@ namespace VL
         public float HighT { get; set; }
         public Graphics DR { get; set; }
         public Color yColor { get; set; }
+        public Color rColor { get; set; }
+        public Color bColor { get; set; }
 
         public void ConcavE_MirrorS()
         {

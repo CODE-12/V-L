@@ -30,6 +30,7 @@ namespace VL
             DR.A = pictureBox1.Width * 0.1f;
             DR.B = 2;
             DR.yColor = Color.FromArgb(254, 226, 13);
+
              DR.DR = pictureBox1.CreateGraphics();
              DR.F = float.Parse(F.Text);
              DR.MooD = float.Parse(MooD.Text);
@@ -45,7 +46,22 @@ namespace VL
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)
         {
         }
-       
-        
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Equations EQ = new Equations();
+            if (Di_M.Text == "?")
+            {
+                EQ.Do = float.Parse(Do_M.Text); 
+                EQ.Ho = float.Parse(Ho_M.Text); EQ.Hi = float.Parse(Hi_M.Text);
+                EQ.Missing_Di_M();
+                
+            }
+        }
     }
 }
