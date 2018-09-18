@@ -9,3 +9,17 @@ C:\Users\user\Desktop\la b\VL\VL\bin\Debug\MetroFramework.dll
 C:\Users\user\Desktop\la b\VL\VL\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.exe
 C:\Users\user\Desktop\la b\VL\VL\obj\Debug\VL.pdb
+D:\V-L\VL\VL\bin\Debug\VL.exe.config
+D:\V-L\VL\VL\bin\Debug\VL.exe
+D:\V-L\VL\VL\bin\Debug\VL.pdb
+D:\V-L\VL\VL\bin\Debug\MetroFramework.dll
+D:\V-L\VL\VL\bin\Debug\MetroFramework.Fonts.dll
+D:\V-L\VL\VL\obj\Debug\VL.csprojAssemblyReference.cache
+D:\V-L\VL\VL\obj\Debug\VL.Form1.resources
+D:\V-L\VL\VL\obj\Debug\VL.Properties.Resources.resources
+D:\V-L\VL\VL\obj\Debug\VL.Startcs.resources
+D:\V-L\VL\VL\obj\Debug\VL.csproj.GenerateResource.cache
+D:\V-L\VL\VL\obj\Debug\VL.csproj.CoreCompileInputs.cache
+D:\V-L\VL\VL\obj\Debug\VL.csproj.CopyComplete
+D:\V-L\VL\VL\obj\Debug\VL.exe
+D:\V-L\VL\VL\obj\Debug\VL.pdb
